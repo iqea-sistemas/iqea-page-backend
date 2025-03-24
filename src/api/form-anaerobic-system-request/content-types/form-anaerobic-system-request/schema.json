@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_anaerobic_system_requests",
+  "info": {
+    "singularName": "form-anaerobic-system-request",
+    "pluralName": "form-anaerobic-system-requests",
+    "displayName": "FormAnaerobicSystemRequest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    }
+  }
+}

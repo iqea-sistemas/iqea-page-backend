@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_forms_form_customer_infos",
+  "info": {
+    "displayName": "FormCustomerInfo",
+    "icon": "database",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CompanyName": {
+      "type": "string"
+    },
+    "UserName": {
+      "type": "string"
+    },
+    "UserLastName": {
+      "type": "string"
+    },
+    "Adress": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "StateProvinceRegion": {
+      "type": "string"
+    },
+    "ZipCode": {
+      "type": "integer"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "integer"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "LinkedInProfile": {
+      "type": "string"
+    },
+    "CompanyWebPage": {
+      "type": "string"
+    },
+    "ProjectDescription": {
+      "type": "text"
+    }
+  }
+}

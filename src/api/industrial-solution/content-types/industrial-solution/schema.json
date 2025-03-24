@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industrial_solutions",
+  "info": {
+    "singularName": "industrial-solution",
+    "pluralName": "industrial-solutions",
+    "displayName": "IndustrialSolution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

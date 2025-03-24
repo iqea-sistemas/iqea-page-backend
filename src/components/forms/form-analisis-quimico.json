@@ -1,0 +1,91 @@
+{
+  "collectionName": "components_forms_form_analisis_quimicos",
+  "info": {
+    "displayName": "FormAnalisisQuimico",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "Temperatura": {
+      "type": "string"
+    },
+    "TurbiedadSDI": {
+      "type": "string"
+    },
+    "Conductividad": {
+      "type": "string"
+    },
+    "TDS": {
+      "type": "string"
+    },
+    "TSS": {
+      "type": "string"
+    },
+    "BacteriaCFU": {
+      "type": "string"
+    },
+    "pH": {
+      "type": "string"
+    },
+    "CO2": {
+      "type": "string"
+    },
+    "DurezaTotal": {
+      "type": "string"
+    },
+    "AlcalinidadTotal": {
+      "type": "string"
+    },
+    "Hierro": {
+      "type": "string"
+    },
+    "SulfurosDeHidrogenoSH2": {
+      "type": "string"
+    },
+    "Calcio": {
+      "type": "string"
+    },
+    "Carbonatos": {
+      "type": "string"
+    },
+    "Magnesio": {
+      "type": "string"
+    },
+    "Bicarbonatos": {
+      "type": "string"
+    },
+    "Sodio": {
+      "type": "string"
+    },
+    "Sulfatos": {
+      "type": "string"
+    },
+    "Potasio": {
+      "type": "string"
+    },
+    "Cloro": {
+      "type": "string"
+    },
+    "Amoniaco": {
+      "type": "string"
+    },
+    "Nitratos": {
+      "type": "string"
+    },
+    "Estroncio": {
+      "type": "string"
+    },
+    "Fosfatos": {
+      "type": "string"
+    },
+    "Bario": {
+      "type": "string"
+    },
+    "OxidoDeSiliceSiO2": {
+      "type": "string"
+    },
+    "CloroResidualLibre": {
+      "type": "string"
+    }
+  }
+}

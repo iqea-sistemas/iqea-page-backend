@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_forms_fuente_agua_alimentacions",
+  "info": {
+    "displayName": "FormFuenteAguaAlimentacion",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FuenteSuministro": {
+      "type": "string"
+    },
+    "TemperaturaMediaAnual": {
+      "type": "string"
+    },
+    "PresenciaCloroLibrePPM": {
+      "type": "string"
+    },
+    "FlujoMaximo": {
+      "type": "string"
+    },
+    "FlujoMinimo": {
+      "type": "string"
+    },
+    "PresionAguaAlimentacion": {
+      "type": "string"
+    }
+  }
+}

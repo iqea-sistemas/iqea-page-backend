@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "forms",
+  "info": {
+    "singularName": "form",
+    "pluralName": "forms",
+    "displayName": "Forms"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.link-slug-name"
+    }
+  }
+}

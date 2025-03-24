@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_general_link_lists",
+  "info": {
+    "displayName": "LinkList"
+  },
+  "options": {},
+  "attributes": {
+    "LinkForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.link-slug-name"
+    }
+  }
+}

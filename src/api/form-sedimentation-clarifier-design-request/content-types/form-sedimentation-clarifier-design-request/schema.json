@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_sedimentation_clarifier_design_requests",
+  "info": {
+    "singularName": "form-sedimentation-clarifier-design-request",
+    "pluralName": "form-sedimentation-clarifier-design-requests",
+    "displayName": "FormSedimentationClarifierDesignRequest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    }
+  }
+}

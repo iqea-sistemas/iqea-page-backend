@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_general_link_slug_names",
+  "info": {
+    "displayName": "LinkSlugName",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "LinkName": {
+      "type": "string"
+    },
+    "Available": {
+      "type": "boolean",
+      "default": true
+    },
+    "Slug": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

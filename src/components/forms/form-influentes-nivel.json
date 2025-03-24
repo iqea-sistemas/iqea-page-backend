@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_forms_form_influentes_nivels",
+  "info": {
+    "displayName": "FormInfluentesNivel",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Flujo": {
+      "type": "string"
+    },
+    "Temperatura": {
+      "type": "string"
+    },
+    "pH": {
+      "type": "string"
+    },
+    "OxigenoDisuelto": {
+      "type": "string"
+    },
+    "DemandaQuimicaOxigeno": {
+      "type": "string"
+    },
+    "SolidosSuspendidos": {
+      "type": "string"
+    },
+    "NitrogenoKjeldahlTotal": {
+      "type": "string"
+    },
+    "GrasasYAceites": {
+      "type": "string"
+    },
+    "SolidosTotales": {
+      "type": "string"
+    },
+    "Conductividad": {
+      "type": "string"
+    },
+    "Arsenico": {
+      "type": "string"
+    },
+    "Cadmio": {
+      "type": "string"
+    },
+    "Cianuro": {
+      "type": "string"
+    },
+    "Cobre": {
+      "type": "string"
+    },
+    "Cromo": {
+      "type": "string"
+    },
+    "Mercurio": {
+      "type": "string"
+    },
+    "Niquel": {
+      "type": "string"
+    },
+    "Plomo": {
+      "type": "string"
+    },
+    "Zinc": {
+      "type": "string"
+    }
+  }
+}

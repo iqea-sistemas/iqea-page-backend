@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_physicochemical_design_requests",
+  "info": {
+    "singularName": "form-physicochemical-design-request",
+    "pluralName": "form-physicochemical-design-requests",
+    "displayName": "FormPhysicochemicalDesignRequest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    },
+    "InfluentLevels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-influentes-nivel"
+    },
+    "EffluentRequirements": {
+      "displayName": "FormEfluentesRequisito",
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-efluentes-requisito"
+    },
+    "FuenteEnergia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.fuente-energia"
+    }
+  }
+}

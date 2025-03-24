@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_osmosis_design_requests",
+  "info": {
+    "singularName": "form-osmosis-design-request",
+    "pluralName": "form-osmosis-design-requests",
+    "displayName": "FormOsmosisDesignRequest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    },
+    "RequisitosAguaTratada": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-requisito-agua-tratada"
+    },
+    "FuenteEnergia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.fuente-energia"
+    },
+    "FuenteAguaAlimentacion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.fuente-agua-alimentacion"
+    },
+    "EspacioDisponible": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-espacio-maximo-disponible"
+    },
+    "AnalisisQuimico": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-analisis-quimico"
+    },
+    "AlimentacionSistema": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-alimentacion-al-sistema"
+    }
+  }
+}

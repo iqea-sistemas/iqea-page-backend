@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_forms_form_alimentacion_al_sistemas",
+  "info": {
+    "displayName": "FormAlimentacionAlSistema",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "DiametroTuberiaAguaAlimentacion": {
+      "type": "string"
+    },
+    "VolumenTotalAlmacenamiento": {
+      "type": "string"
+    },
+    "DistanciaAlturaCisterna": {
+      "type": "string"
+    },
+    "DisponibilidadDrenaje": {
+      "type": "string"
+    },
+    "AlmacenamientoAguaProducto": {
+      "type": "boolean"
+    },
+    "RequiereRepresurizacionPermeado": {
+      "type": "boolean"
+    }
+  }
+}

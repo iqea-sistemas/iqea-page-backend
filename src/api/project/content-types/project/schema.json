@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Show": {
+      "type": "boolean",
+      "default": true
+    },
+    "Client": {
+      "type": "string",
+      "required": true
+    },
+    "Sector": {
+      "type": "enumeration",
+      "enum": [
+        "Industrial",
+        "Habitacional",
+        "Comercial",
+        "Gubernamental",
+        "Agricola"
+      ]
+    },
+    "Year": {
+      "type": "integer",
+      "required": true
+    },
+    "Capacity": {
+      "type": "decimal"
+    },
+    "Location": {
+      "type": "string",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

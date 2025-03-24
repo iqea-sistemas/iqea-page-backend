@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_forms_fuente_energias",
+  "info": {
+    "displayName": "FormFuenteEnergia",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Voltaje": {
+      "type": "string"
+    },
+    "Ciclos": {
+      "type": "string"
+    },
+    "Fases": {
+      "type": "string"
+    },
+    "MaxAmps": {
+      "type": "string"
+    }
+  }
+}

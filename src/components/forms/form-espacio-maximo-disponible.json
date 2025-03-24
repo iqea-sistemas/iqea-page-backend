@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_forms_form_espacio_maximo_disponibles",
+  "info": {
+    "displayName": "FormEspacioMaximoDisponible",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "Largo": {
+      "type": "string"
+    },
+    "Ancho": {
+      "type": "string"
+    },
+    "Altura": {
+      "type": "string"
+    }
+  }
+}

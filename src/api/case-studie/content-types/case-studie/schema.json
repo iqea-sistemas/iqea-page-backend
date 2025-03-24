@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-studie",
+    "pluralName": "case-studies",
+    "displayName": "CaseStudies"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": false
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

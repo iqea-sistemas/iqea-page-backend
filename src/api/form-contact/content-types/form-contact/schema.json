@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_contacts",
+  "info": {
+    "singularName": "form-contact",
+    "pluralName": "form-contacts",
+    "displayName": "FormContact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Topic": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
+    }
+  }
+}

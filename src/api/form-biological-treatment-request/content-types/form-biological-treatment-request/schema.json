@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_biological_treatment_requests",
+  "info": {
+    "singularName": "form-biological-treatment-request",
+    "pluralName": "form-biological-treatment-requests",
+    "displayName": "FormBiologicalTreatmentRequest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    },
+    "InfluentLevels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-influentes-nivel"
+    },
+    "EffluentRequirements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-efluentes-requisito"
+    },
+    "FuenteEnergia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "forms.fuente-energia"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_moving_bed_biofilm_reactors",
+  "info": {
+    "singularName": "form-moving-bed-biofilm-reactor",
+    "pluralName": "form-moving-bed-biofilm-reactors",
+    "displayName": "FormMovingBedBiofilmReactor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ContanctInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-customer-info"
+    }
+  }
+}
