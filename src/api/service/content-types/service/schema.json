@@ -4,24 +4,25 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "titulo": {
       "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "contenido": {
+      "type": "text"
     },
     "slug": {
       "type": "uid",
-      "targetField": "Title"
-    },
-    "Description": {
-      "type": "text"
-    },
-    "Content": {
-      "type": "blocks"
+      "targetField": "titulo"
     },
     "Images": {
       "allowedTypes": [

@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiCaseStudieCaseStudie extends Struct.CollectionTypeSchema {
   collectionName: 'case_studies';
   info: {
+    description: '';
     displayName: 'CaseStudies';
     pluralName: 'case-studies';
     singularName: 'case-studie';
@@ -380,12 +381,16 @@ export interface ApiCaseStudieCaseStudie extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Content: Schema.Attribute.Blocks;
+    alcance: Schema.Attribute.String;
+    anio_de_construccion: Schema.Attribute.Integer;
+    capacidad: Schema.Attribute.String;
+    coparticipacion: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Text;
+    descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
+    is_public: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -393,8 +398,10 @@ export interface ApiCaseStudieCaseStudie extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'Title'>;
-    Title: Schema.Attribute.String;
+    sector_comercial: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'titulo'>;
+    titulo: Schema.Attribute.String;
+    ubicacion: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -677,6 +684,7 @@ export interface ApiIndustrialSolutionIndustrialSolution
   extends Struct.CollectionTypeSchema {
   collectionName: 'industrial_solutions';
   info: {
+    description: '';
     displayName: 'IndustrialSolution';
     pluralName: 'industrial-solutions';
     singularName: 'industrial-solution';
@@ -685,11 +693,11 @@ export interface ApiIndustrialSolutionIndustrialSolution
     draftAndPublish: true;
   };
   attributes: {
-    Content: Schema.Attribute.Blocks;
+    contenido: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Blocks;
+    descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -698,8 +706,8 @@ export interface ApiIndustrialSolutionIndustrialSolution
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'Title'>;
-    Title: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'titulo'>;
+    titulo: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -718,37 +726,38 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Capacity: Schema.Attribute.Decimal;
-    Client: Schema.Attribute.String & Schema.Attribute.Required;
+    alcance: Schema.Attribute.String;
+    anio_de_construccion: Schema.Attribute.Integer;
+    capacidad: Schema.Attribute.String;
+    cliente: Schema.Attribute.String;
+    coparticipacion: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.RichText;
+    descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
+    is_public: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::project.project'
     > &
       Schema.Attribute.Private;
-    Location: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
-    Sector: Schema.Attribute.Enumeration<
-      ['Industrial', 'Habitacional', 'Comercial', 'Gubernamental', 'Agricola']
-    >;
-    Show: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
-    slug: Schema.Attribute.UID<'Title'>;
-    Title: Schema.Attribute.String & Schema.Attribute.Required;
+    sector_comercial: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'titulo'>;
+    titulo: Schema.Attribute.String;
+    ubicacion: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Year: Schema.Attribute.Integer & Schema.Attribute.Required;
   };
 }
 
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
+    description: '';
     displayName: 'Service';
     pluralName: 'services';
     singularName: 'service';
@@ -757,11 +766,11 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Content: Schema.Attribute.Blocks;
+    contenido: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Text;
+    descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -770,8 +779,8 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'Title'>;
-    Title: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'titulo'>;
+    titulo: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

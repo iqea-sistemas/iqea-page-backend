@@ -4,33 +4,53 @@
   "info": {
     "singularName": "case-studie",
     "pluralName": "case-studies",
-    "displayName": "CaseStudies"
+    "displayName": "CaseStudies",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "titulo": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
-      "targetField": "Title",
+      "targetField": "titulo",
       "required": false
     },
-    "Content": {
-      "type": "blocks"
-    },
-    "Description": {
-      "type": "text"
-    },
     "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "sector_comercial": {
+      "type": "string"
+    },
+    "alcance": {
+      "type": "string"
+    },
+    "anio_de_construccion": {
+      "type": "integer"
+    },
+    "coparticipacion": {
+      "type": "string"
+    },
+    "capacidad": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "is_public": {
+      "type": "boolean"
     }
   }
 }

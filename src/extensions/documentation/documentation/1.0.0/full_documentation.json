@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-03-24T05:01:17.297Z"
+    "x-generation-date": "2025-03-30T01:02:34.011Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -7388,14 +7388,10 @@
           "data": {
             "type": "object",
             "properties": {
-              "Title": {
+              "titulo": {
                 "type": "string"
               },
               "slug": {
-                "type": "string"
-              },
-              "Content": {},
-              "Description": {
                 "type": "string"
               },
               "Images": {
@@ -7411,6 +7407,30 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "sector_comercial": {
+                "type": "string"
+              },
+              "alcance": {
+                "type": "string"
+              },
+              "anio_de_construccion": {
+                "type": "integer"
+              },
+              "coparticipacion": {
+                "type": "string"
+              },
+              "capacidad": {
+                "type": "string"
+              },
+              "ubicacion": {
+                "type": "string"
+              },
+              "descripcion": {
+                "type": "string"
+              },
+              "is_public": {
+                "type": "boolean"
               },
               "locale": {
                 "type": "string"
@@ -7477,14 +7497,10 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "titulo": {
             "type": "string"
           },
           "slug": {
-            "type": "string"
-          },
-          "Content": {},
-          "Description": {
             "type": "string"
           },
           "Images": {
@@ -8088,6 +8104,30 @@
               }
             }
           },
+          "sector_comercial": {
+            "type": "string"
+          },
+          "alcance": {
+            "type": "string"
+          },
+          "anio_de_construccion": {
+            "type": "integer"
+          },
+          "coparticipacion": {
+            "type": "string"
+          },
+          "capacidad": {
+            "type": "string"
+          },
+          "ubicacion": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "is_public": {
+            "type": "boolean"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -8136,14 +8176,10 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Title": {
+                "titulo": {
                   "type": "string"
                 },
                 "slug": {
-                  "type": "string"
-                },
-                "Content": {},
-                "Description": {
                   "type": "string"
                 },
                 "Images": {
@@ -8277,6 +8313,30 @@
                       }
                     }
                   }
+                },
+                "sector_comercial": {
+                  "type": "string"
+                },
+                "alcance": {
+                  "type": "string"
+                },
+                "anio_de_construccion": {
+                  "type": "integer"
+                },
+                "coparticipacion": {
+                  "type": "string"
+                },
+                "capacidad": {
+                  "type": "string"
+                },
+                "ubicacion": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
+                "is_public": {
+                  "type": "boolean"
                 },
                 "createdAt": {
                   "type": "string",
@@ -12506,14 +12566,18 @@
           "data": {
             "type": "object",
             "properties": {
-              "Title": {
+              "titulo": {
                 "type": "string"
               },
               "slug": {
                 "type": "string"
               },
-              "Description": {},
-              "Content": {},
+              "contenido": {
+                "type": "string"
+              },
+              "descripcion": {
+                "type": "string"
+              },
               "Images": {
                 "type": "array",
                 "items": {
@@ -12593,14 +12657,18 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "titulo": {
             "type": "string"
           },
           "slug": {
             "type": "string"
           },
-          "Description": {},
-          "Content": {},
+          "contenido": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
           "Images": {
             "type": "array",
             "items": {
@@ -13250,14 +13318,18 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Title": {
+                "titulo": {
                   "type": "string"
                 },
                 "slug": {
                   "type": "string"
                 },
-                "Description": {},
-                "Content": {},
+                "contenido": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
                 "Images": {
                   "type": "array",
                   "items": {
@@ -13464,41 +13536,39 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "Title",
-              "Client",
-              "Year",
-              "Location"
-            ],
             "type": "object",
             "properties": {
-              "Title": {
+              "titulo": {
                 "type": "string"
               },
-              "Show": {
-                "type": "boolean"
-              },
-              "Client": {
+              "slug": {
                 "type": "string"
               },
-              "Sector": {
-                "type": "string",
-                "enum": [
-                  "Industrial",
-                  "Habitacional",
-                  "Comercial",
-                  "Gubernamental",
-                  "Agricola"
-                ]
+              "sector_comercial": {
+                "type": "string"
               },
-              "Year": {
+              "alcance": {
+                "type": "string"
+              },
+              "anio_de_construccion": {
                 "type": "integer"
               },
-              "Capacity": {
-                "type": "number",
-                "format": "float"
+              "coparticipacion": {
+                "type": "string"
               },
-              "Location": {
+              "ubicacion": {
+                "type": "string"
+              },
+              "descripcion": {
+                "type": "string"
+              },
+              "is_public": {
+                "type": "boolean"
+              },
+              "cliente": {
+                "type": "string"
+              },
+              "capacidad": {
                 "type": "string"
               },
               "Images": {
@@ -13514,12 +13584,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "slug": {
-                "type": "string"
-              },
-              "Description": {
-                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -13579,12 +13643,6 @@
       },
       "Project": {
         "type": "object",
-        "required": [
-          "Title",
-          "Client",
-          "Year",
-          "Location"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -13592,33 +13650,37 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "titulo": {
             "type": "string"
           },
-          "Show": {
-            "type": "boolean"
-          },
-          "Client": {
+          "slug": {
             "type": "string"
           },
-          "Sector": {
-            "type": "string",
-            "enum": [
-              "Industrial",
-              "Habitacional",
-              "Comercial",
-              "Gubernamental",
-              "Agricola"
-            ]
+          "sector_comercial": {
+            "type": "string"
           },
-          "Year": {
+          "alcance": {
+            "type": "string"
+          },
+          "anio_de_construccion": {
             "type": "integer"
           },
-          "Capacity": {
-            "type": "number",
-            "format": "float"
+          "coparticipacion": {
+            "type": "string"
           },
-          "Location": {
+          "ubicacion": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "is_public": {
+            "type": "boolean"
+          },
+          "cliente": {
+            "type": "string"
+          },
+          "capacidad": {
             "type": "string"
           },
           "Images": {
@@ -14222,12 +14284,6 @@
               }
             }
           },
-          "slug": {
-            "type": "string"
-          },
-          "Description": {
-            "type": "string"
-          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -14276,33 +14332,37 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Title": {
+                "titulo": {
                   "type": "string"
                 },
-                "Show": {
-                  "type": "boolean"
-                },
-                "Client": {
+                "slug": {
                   "type": "string"
                 },
-                "Sector": {
-                  "type": "string",
-                  "enum": [
-                    "Industrial",
-                    "Habitacional",
-                    "Comercial",
-                    "Gubernamental",
-                    "Agricola"
-                  ]
+                "sector_comercial": {
+                  "type": "string"
                 },
-                "Year": {
+                "alcance": {
+                  "type": "string"
+                },
+                "anio_de_construccion": {
                   "type": "integer"
                 },
-                "Capacity": {
-                  "type": "number",
-                  "format": "float"
+                "coparticipacion": {
+                  "type": "string"
                 },
-                "Location": {
+                "ubicacion": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
+                "is_public": {
+                  "type": "boolean"
+                },
+                "cliente": {
+                  "type": "string"
+                },
+                "capacidad": {
                   "type": "string"
                 },
                 "Images": {
@@ -14437,12 +14497,6 @@
                     }
                   }
                 },
-                "slug": {
-                  "type": "string"
-                },
-                "Description": {
-                  "type": "string"
-                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -14519,16 +14573,18 @@
           "data": {
             "type": "object",
             "properties": {
-              "Title": {
+              "titulo": {
+                "type": "string"
+              },
+              "descripcion": {
+                "type": "string"
+              },
+              "contenido": {
                 "type": "string"
               },
               "slug": {
                 "type": "string"
               },
-              "Description": {
-                "type": "string"
-              },
-              "Content": {},
               "Images": {
                 "type": "array",
                 "items": {
@@ -14608,16 +14664,18 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "titulo": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "contenido": {
             "type": "string"
           },
           "slug": {
             "type": "string"
           },
-          "Description": {
-            "type": "string"
-          },
-          "Content": {},
           "Images": {
             "type": "array",
             "items": {
@@ -15267,16 +15325,18 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Title": {
+                "titulo": {
+                  "type": "string"
+                },
+                "descripcion": {
+                  "type": "string"
+                },
+                "contenido": {
                   "type": "string"
                 },
                 "slug": {
                   "type": "string"
                 },
-                "Description": {
-                  "type": "string"
-                },
-                "Content": {},
                 "Images": {
                   "type": "array",
                   "items": {

@@ -4,24 +4,25 @@
   "info": {
     "singularName": "industrial-solution",
     "pluralName": "industrial-solutions",
-    "displayName": "IndustrialSolution"
+    "displayName": "IndustrialSolution",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "titulo": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
-      "targetField": "Title"
+      "targetField": "titulo"
     },
-    "Description": {
-      "type": "blocks"
+    "contenido": {
+      "type": "text"
     },
-    "Content": {
-      "type": "blocks"
+    "descripcion": {
+      "type": "text"
     },
     "Images": {
       "allowedTypes": [

@@ -25,10 +25,7 @@ export default [
     name: 'strapi::cors',
     config: {
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-      origin: [
-        '*',
-        'http://localhost:3000',
-        'http://localhost:1337',
+      origin: [  
          process.env.SITE_URL,
          process.env.SITE_URL_INT,
          process.env.STRAPI_DOMAIN
