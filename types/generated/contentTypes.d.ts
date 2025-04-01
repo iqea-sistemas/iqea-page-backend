@@ -754,6 +754,40 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiRegistroEstimadorRegistroEstimador
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'registro_estimadors';
+  info: {
+    displayName: 'RegistroEstimador';
+    pluralName: 'registro-estimadors';
+    singularName: 'registro-estimador';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    correo: Schema.Attribute.Email;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    empresa: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::registro-estimador.registro-estimador'
+    > &
+      Schema.Attribute.Private;
+    nombre: Schema.Attribute.String;
+    perfil: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    puesto: Schema.Attribute.String;
+    telefono: Schema.Attribute.BigInteger;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
@@ -1307,6 +1341,7 @@ declare module '@strapi/strapi' {
       'api::form.form': ApiFormForm;
       'api::industrial-solution.industrial-solution': ApiIndustrialSolutionIndustrialSolution;
       'api::project.project': ApiProjectProject;
+      'api::registro-estimador.registro-estimador': ApiRegistroEstimadorRegistroEstimador;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

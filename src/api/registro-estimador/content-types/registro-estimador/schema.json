@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registro_estimadors",
+  "info": {
+    "singularName": "registro-estimador",
+    "pluralName": "registro-estimadors",
+    "displayName": "RegistroEstimador"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "empresa": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "perfil": {
+      "type": "string"
+    },
+    "puesto": {
+      "type": "string"
+    }
+  }
+}
