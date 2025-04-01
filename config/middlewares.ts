@@ -27,7 +27,7 @@ export default [
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       origin: [ 
         '*',
-        'https://iqea-estimator.vercel.app/',
+        'https://iqea-estimador.vercel.app//',
         'http://localhost:5173/', 
         'iqea.mx',
          process.env.SITE_URL,
