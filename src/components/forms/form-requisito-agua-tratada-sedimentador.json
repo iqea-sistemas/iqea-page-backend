@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_forms_form_requisito_agua_tratada_sedimentadors",
+  "info": {
+    "displayName": "FormRequisitoAguaTratadaSedimentador",
+    "icon": "cloud"
+  },
+  "options": {},
+  "attributes": {
+    "SolidosSuspendidosTotales": {
+      "type": "string"
+    },
+    "SolidosDisueltosTotales": {
+      "type": "string"
+    },
+    "DemandaDeOxigenoQuimico": {
+      "type": "string"
+    },
+    "DemandaDeOxigenoBiologico": {
+      "type": "string"
+    },
+    "NitrogenoAmoniacal": {
+      "type": "string"
+    },
+    "Fosfatos": {
+      "type": "string"
+    },
+    "FOG": {
+      "type": "string"
+    },
+    "pH": {
+      "type": "string"
+    }
+  }
+}

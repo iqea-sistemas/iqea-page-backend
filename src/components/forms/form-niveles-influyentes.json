@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_forms_form_niveles_influyentes",
+  "info": {
+    "displayName": "FormNivelesInfluyentes",
+    "icon": "cloud"
+  },
+  "options": {},
+  "attributes": {
+    "SolidosSuspendidosTotales": {
+      "type": "string"
+    },
+    "SolidosDisueltosTotales": {
+      "type": "string"
+    },
+    "DemandaDeOxigenoQuimico": {
+      "type": "string"
+    },
+    "DemandaDeOxigenoBioquimico": {
+      "type": "string"
+    },
+    "NitrogenoAmoniacal": {
+      "type": "string"
+    },
+    "Fosfatos": {
+      "type": "string"
+    },
+    "FOG": {
+      "type": "string"
+    },
+    "pH": {
+      "type": "string"
+    }
+  }
+}

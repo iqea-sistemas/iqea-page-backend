@@ -77,6 +77,64 @@ export interface FormsFormCustomerInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface FormsFormDetallesBiologicos extends Struct.ComponentSchema {
+  collectionName: 'components_forms_form_detalles_biologicos';
+  info: {
+    displayName: 'FormDetallesBiologicos';
+    icon: 'cloud';
+  };
+  attributes: {
+    FuenteAguasResiduales: Schema.Attribute.String;
+    TasaDeFlujo: Schema.Attribute.String;
+    TasaDeFlujoMaximo: Schema.Attribute.String;
+  };
+}
+
+export interface FormsFormDetallesBiologicosVp extends Struct.ComponentSchema {
+  collectionName: 'components_forms_form_detalles_biologicos_vps';
+  info: {
+    displayName: 'FormDetallesBiologicosVP';
+    icon: 'cloud';
+  };
+  attributes: {
+    Alcalinidad: Schema.Attribute.String;
+    BODSolubleMgLt: Schema.Attribute.String;
+    BODSolublePorKgDia: Schema.Attribute.String;
+    BODTotalMgLt: Schema.Attribute.String;
+    BODTotalPorKgDia: Schema.Attribute.String;
+    Calcio: Schema.Attribute.String;
+    Cloruro: Schema.Attribute.String;
+    CODSolubleMgLt: Schema.Attribute.String;
+    CODSolublePorKgDia: Schema.Attribute.String;
+    CODTotalMgLt: Schema.Attribute.String;
+    CODTotalPorKgDia: Schema.Attribute.String;
+    CompuestosToxicos: Schema.Attribute.String;
+    Conductividad: Schema.Attribute.String;
+    FlujoHoraMetroHora: Schema.Attribute.String;
+    FlujoPorDiaSemana: Schema.Attribute.String;
+    FlujoPorHoraDia: Schema.Attribute.String;
+    FlujoPorMetroDia: Schema.Attribute.String;
+    GrasaAceite: Schema.Attribute.String;
+    Magnesio: Schema.Attribute.String;
+    NH4N: Schema.Attribute.String;
+    NitrogenoTotal: Schema.Attribute.String;
+    NKjeldahl: Schema.Attribute.String;
+    NO3N: Schema.Attribute.String;
+    pH: Schema.Attribute.String;
+    PO4P: Schema.Attribute.String;
+    Potasio: Schema.Attribute.String;
+    PTotal: Schema.Attribute.String;
+    Redox: Schema.Attribute.String;
+    S2: Schema.Attribute.String;
+    SO4: Schema.Attribute.String;
+    Sodio: Schema.Attribute.String;
+    Temperatura: Schema.Attribute.String;
+    TSSPorKgDia: Schema.Attribute.String;
+    TSSPorMgLt: Schema.Attribute.String;
+    VFA: Schema.Attribute.String;
+  };
+}
+
 export interface FormsFormEfluentesRequisito extends Struct.ComponentSchema {
   collectionName: 'components_forms_form_efluentes_requisitos';
   info: {
@@ -151,6 +209,24 @@ export interface FormsFormInfluentesNivel extends Struct.ComponentSchema {
   };
 }
 
+export interface FormsFormNivelesInfluyentes extends Struct.ComponentSchema {
+  collectionName: 'components_forms_form_niveles_influyentes';
+  info: {
+    displayName: 'FormNivelesInfluyentes';
+    icon: 'cloud';
+  };
+  attributes: {
+    DemandaDeOxigenoBioquimico: Schema.Attribute.String;
+    DemandaDeOxigenoQuimico: Schema.Attribute.String;
+    FOG: Schema.Attribute.String;
+    Fosfatos: Schema.Attribute.String;
+    NitrogenoAmoniacal: Schema.Attribute.String;
+    pH: Schema.Attribute.String;
+    SolidosDisueltosTotales: Schema.Attribute.String;
+    SolidosSuspendidosTotales: Schema.Attribute.String;
+  };
+}
+
 export interface FormsFormRequisitoAguaTratada extends Struct.ComponentSchema {
   collectionName: 'components_forms_form_requisito_agua_tratadas';
   info: {
@@ -164,6 +240,25 @@ export interface FormsFormRequisitoAguaTratada extends Struct.ComponentSchema {
     UsoDelProductoAgua: Schema.Attribute.String;
     VolumenPorDia: Schema.Attribute.String;
     VolumenPorMinuto: Schema.Attribute.String;
+  };
+}
+
+export interface FormsFormRequisitoAguaTratadaSedimentador
+  extends Struct.ComponentSchema {
+  collectionName: 'components_forms_form_requisito_agua_tratada_sedimentadors';
+  info: {
+    displayName: 'FormRequisitoAguaTratadaSedimentador';
+    icon: 'cloud';
+  };
+  attributes: {
+    DemandaDeOxigenoBiologico: Schema.Attribute.String;
+    DemandaDeOxigenoQuimico: Schema.Attribute.String;
+    FOG: Schema.Attribute.String;
+    Fosfatos: Schema.Attribute.String;
+    NitrogenoAmoniacal: Schema.Attribute.String;
+    pH: Schema.Attribute.String;
+    SolidosDisueltosTotales: Schema.Attribute.String;
+    SolidosSuspendidosTotales: Schema.Attribute.String;
   };
 }
 
@@ -228,10 +323,14 @@ declare module '@strapi/strapi' {
       'forms.form-alimentacion-al-sistema': FormsFormAlimentacionAlSistema;
       'forms.form-analisis-quimico': FormsFormAnalisisQuimico;
       'forms.form-customer-info': FormsFormCustomerInfo;
+      'forms.form-detalles-biologicos': FormsFormDetallesBiologicos;
+      'forms.form-detalles-biologicos-vp': FormsFormDetallesBiologicosVp;
       'forms.form-efluentes-requisito': FormsFormEfluentesRequisito;
       'forms.form-espacio-maximo-disponible': FormsFormEspacioMaximoDisponible;
       'forms.form-influentes-nivel': FormsFormInfluentesNivel;
+      'forms.form-niveles-influyentes': FormsFormNivelesInfluyentes;
       'forms.form-requisito-agua-tratada': FormsFormRequisitoAguaTratada;
+      'forms.form-requisito-agua-tratada-sedimentador': FormsFormRequisitoAguaTratadaSedimentador;
       'forms.fuente-agua-alimentacion': FormsFuenteAguaAlimentacion;
       'forms.fuente-energia': FormsFuenteEnergia;
       'general.link-list': GeneralLinkList;

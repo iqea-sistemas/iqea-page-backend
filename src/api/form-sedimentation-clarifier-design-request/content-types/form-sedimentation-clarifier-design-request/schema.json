@@ -4,7 +4,8 @@
   "info": {
     "singularName": "form-sedimentation-clarifier-design-request",
     "pluralName": "form-sedimentation-clarifier-design-requests",
-    "displayName": "FormSedimentationClarifierDesignRequest"
+    "displayName": "FormSedimentationClarifierDesignRequest",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,26 @@
       "type": "component",
       "repeatable": false,
       "component": "forms.form-customer-info"
+    },
+    "DetallesBiologicos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-detalles-biologicos"
+    },
+    "NivelesInfluyentes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-niveles-influyentes"
+    },
+    "RequisitosDeAlta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-requisito-agua-tratada-sedimentador"
+    },
+    "AntecedentesProyecto": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.fuente-energia"
     }
   }
 }

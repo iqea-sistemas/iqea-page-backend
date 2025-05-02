@@ -4,7 +4,8 @@
   "info": {
     "singularName": "form-biological-treatment-request",
     "pluralName": "form-biological-treatment-requests",
-    "displayName": "FormBiologicalTreatmentRequest"
+    "displayName": "FormBiologicalTreatmentRequest",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,7 +28,7 @@
     },
     "FuenteEnergia": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "forms.fuente-energia"
     }
   }

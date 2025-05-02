@@ -441,6 +441,7 @@ export interface ApiFormBiologicalTreatmentRequestFormBiologicalTreatmentRequest
   extends Struct.CollectionTypeSchema {
   collectionName: 'form_biological_treatment_requests';
   info: {
+    description: '';
     displayName: 'FormBiologicalTreatmentRequest';
     pluralName: 'form-biological-treatment-requests';
     singularName: 'form-biological-treatment-request';
@@ -457,7 +458,7 @@ export interface ApiFormBiologicalTreatmentRequestFormBiologicalTreatmentRequest
       'forms.form-efluentes-requisito',
       false
     >;
-    FuenteEnergia: Schema.Attribute.Component<'forms.fuente-energia', true>;
+    FuenteEnergia: Schema.Attribute.Component<'forms.fuente-energia', false>;
     InfluentLevels: Schema.Attribute.Component<
       'forms.form-influentes-nivel',
       false
@@ -630,6 +631,7 @@ export interface ApiFormSedimentationClarifierDesignRequestFormSedimentationClar
   extends Struct.CollectionTypeSchema {
   collectionName: 'form_sedimentation_clarifier_design_requests';
   info: {
+    description: '';
     displayName: 'FormSedimentationClarifierDesignRequest';
     pluralName: 'form-sedimentation-clarifier-design-requests';
     singularName: 'form-sedimentation-clarifier-design-request';
@@ -638,17 +640,33 @@ export interface ApiFormSedimentationClarifierDesignRequestFormSedimentationClar
     draftAndPublish: true;
   };
   attributes: {
+    AntecedentesProyecto: Schema.Attribute.Component<
+      'forms.fuente-energia',
+      false
+    >;
     ContanctInfo: Schema.Attribute.Component<'forms.form-customer-info', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    DetallesBiologicos: Schema.Attribute.Component<
+      'forms.form-detalles-biologicos',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::form-sedimentation-clarifier-design-request.form-sedimentation-clarifier-design-request'
     > &
       Schema.Attribute.Private;
+    NivelesInfluyentes: Schema.Attribute.Component<
+      'forms.form-niveles-influyentes',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    RequisitosDeAlta: Schema.Attribute.Component<
+      'forms.form-requisito-agua-tratada-sedimentador',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

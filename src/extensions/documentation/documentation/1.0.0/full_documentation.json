@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-04-01T06:29:27.065Z"
+    "x-generation-date": "2025-05-02T00:23:28.323Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -9904,10 +9904,7 @@
                 "$ref": "#/components/schemas/FormsFormEfluentesRequisitoComponent"
               },
               "FuenteEnergia": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
-                }
+                "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
               },
               "locale": {
                 "type": "string"
@@ -9984,10 +9981,7 @@
             "$ref": "#/components/schemas/FormsFormEfluentesRequisitoComponent"
           },
           "FuenteEnergia": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
-            }
+            "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
           },
           "createdAt": {
             "type": "string",
@@ -10299,10 +10293,7 @@
                   "$ref": "#/components/schemas/FormsFormEfluentesRequisitoComponent"
                 },
                 "FuenteEnergia": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
-                  }
+                  "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
                 },
                 "createdAt": {
                   "type": "string",
@@ -12625,6 +12616,18 @@
               "ContanctInfo": {
                 "$ref": "#/components/schemas/FormsFormCustomerInfoComponent"
               },
+              "DetallesBiologicos": {
+                "$ref": "#/components/schemas/FormsFormDetallesBiologicosComponent"
+              },
+              "NivelesInfluyentes": {
+                "$ref": "#/components/schemas/FormsFormNivelesInfluyentesComponent"
+              },
+              "RequisitosDeAlta": {
+                "$ref": "#/components/schemas/FormsFormRequisitoAguaTratadaSedimentadorComponent"
+              },
+              "AntecedentesProyecto": {
+                "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
+              },
               "locale": {
                 "type": "string"
               },
@@ -12692,6 +12695,18 @@
           },
           "ContanctInfo": {
             "$ref": "#/components/schemas/FormsFormCustomerInfoComponent"
+          },
+          "DetallesBiologicos": {
+            "$ref": "#/components/schemas/FormsFormDetallesBiologicosComponent"
+          },
+          "NivelesInfluyentes": {
+            "$ref": "#/components/schemas/FormsFormNivelesInfluyentesComponent"
+          },
+          "RequisitosDeAlta": {
+            "$ref": "#/components/schemas/FormsFormRequisitoAguaTratadaSedimentadorComponent"
+          },
+          "AntecedentesProyecto": {
+            "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
           },
           "createdAt": {
             "type": "string",
@@ -12996,6 +13011,18 @@
                 "ContanctInfo": {
                   "$ref": "#/components/schemas/FormsFormCustomerInfoComponent"
                 },
+                "DetallesBiologicos": {
+                  "$ref": "#/components/schemas/FormsFormDetallesBiologicosComponent"
+                },
+                "NivelesInfluyentes": {
+                  "$ref": "#/components/schemas/FormsFormNivelesInfluyentesComponent"
+                },
+                "RequisitosDeAlta": {
+                  "$ref": "#/components/schemas/FormsFormRequisitoAguaTratadaSedimentadorComponent"
+                },
+                "AntecedentesProyecto": {
+                  "$ref": "#/components/schemas/FormsFuenteEnergiaComponent"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -13060,6 +13087,87 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "FormsFormDetallesBiologicosComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "FuenteAguasResiduales": {
+            "type": "string"
+          },
+          "TasaDeFlujo": {
+            "type": "string"
+          },
+          "TasaDeFlujoMaximo": {
+            "type": "string"
+          }
+        }
+      },
+      "FormsFormNivelesInfluyentesComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "SolidosSuspendidosTotales": {
+            "type": "string"
+          },
+          "SolidosDisueltosTotales": {
+            "type": "string"
+          },
+          "DemandaDeOxigenoQuimico": {
+            "type": "string"
+          },
+          "DemandaDeOxigenoBioquimico": {
+            "type": "string"
+          },
+          "NitrogenoAmoniacal": {
+            "type": "string"
+          },
+          "Fosfatos": {
+            "type": "string"
+          },
+          "FOG": {
+            "type": "string"
+          },
+          "pH": {
+            "type": "string"
+          }
+        }
+      },
+      "FormsFormRequisitoAguaTratadaSedimentadorComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "SolidosSuspendidosTotales": {
+            "type": "string"
+          },
+          "SolidosDisueltosTotales": {
+            "type": "string"
+          },
+          "DemandaDeOxigenoQuimico": {
+            "type": "string"
+          },
+          "DemandaDeOxigenoBiologico": {
+            "type": "string"
+          },
+          "NitrogenoAmoniacal": {
+            "type": "string"
+          },
+          "Fosfatos": {
+            "type": "string"
+          },
+          "FOG": {
+            "type": "string"
+          },
+          "pH": {
+            "type": "string"
           }
         }
       },
