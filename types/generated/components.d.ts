@@ -1,5 +1,50 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface FormsDetallesBiologicosVMax extends Struct.ComponentSchema {
+  collectionName: 'components_forms_detalles_biologicos_v_maxes';
+  info: {
+    displayName: 'DetallesBiologicosVMax';
+    icon: 'cloud';
+  };
+  attributes: {
+    Alcalinidad: Schema.Attribute.String;
+    BODSolubleMgLt: Schema.Attribute.String;
+    BODSolublePorKgDia: Schema.Attribute.String;
+    BODTotalMgLt: Schema.Attribute.String;
+    BODTotalPorKgDia: Schema.Attribute.String;
+    Calcio: Schema.Attribute.String;
+    Cloruro: Schema.Attribute.String;
+    CODSolubleMgLt: Schema.Attribute.String;
+    CODSolublePorKgDia: Schema.Attribute.String;
+    CODTotalMgLt: Schema.Attribute.String;
+    CODTotalPorKgDia: Schema.Attribute.String;
+    CompuestosToxicos: Schema.Attribute.String;
+    Conductividad: Schema.Attribute.String;
+    FlujoHoraMetroHora: Schema.Attribute.String;
+    FlujoPorDiaSemana: Schema.Attribute.String;
+    FlujoPorHoraDia: Schema.Attribute.String;
+    FlujoPorMetroDia: Schema.Attribute.String;
+    GrasaAceite: Schema.Attribute.String;
+    Magnesio: Schema.Attribute.String;
+    NH4N: Schema.Attribute.String;
+    NitrogenoTotal: Schema.Attribute.String;
+    NKjeldahl: Schema.Attribute.String;
+    NO3N: Schema.Attribute.String;
+    pH: Schema.Attribute.String;
+    PO4P: Schema.Attribute.String;
+    Potasio: Schema.Attribute.String;
+    PTotal: Schema.Attribute.String;
+    Redox: Schema.Attribute.String;
+    S2: Schema.Attribute.String;
+    SO4: Schema.Attribute.String;
+    Sodio: Schema.Attribute.String;
+    Temperatura: Schema.Attribute.String;
+    TSSPorKgDia: Schema.Attribute.String;
+    TSSPorMgLt: Schema.Attribute.String;
+    VFA: Schema.Attribute.String;
+  };
+}
+
 export interface FormsFormAlimentacionAlSistema extends Struct.ComponentSchema {
   collectionName: 'components_forms_form_alimentacion_al_sistemas';
   info: {
@@ -87,6 +132,52 @@ export interface FormsFormDetallesBiologicos extends Struct.ComponentSchema {
     FuenteAguasResiduales: Schema.Attribute.String;
     TasaDeFlujo: Schema.Attribute.String;
     TasaDeFlujoMaximo: Schema.Attribute.String;
+  };
+}
+
+export interface FormsFormDetallesBiologicosVMin
+  extends Struct.ComponentSchema {
+  collectionName: 'components_forms_form_detalles_biologicos_v_mins';
+  info: {
+    displayName: 'FormDetallesBiologicosVMin';
+    icon: 'cloud';
+  };
+  attributes: {
+    Alcalinidad: Schema.Attribute.String;
+    BODSolubleMgLt: Schema.Attribute.String;
+    BODSolublePorKgDia: Schema.Attribute.String;
+    BODTotalMgLt: Schema.Attribute.String;
+    BODTotalPorKgDia: Schema.Attribute.String;
+    Calcio: Schema.Attribute.String;
+    Cloruro: Schema.Attribute.String;
+    CODSolubleMgLt: Schema.Attribute.String;
+    CODSolublePorKgDia: Schema.Attribute.String;
+    CODTotalMgLt: Schema.Attribute.String;
+    CODTotalPorKgDia: Schema.Attribute.String;
+    CompuestosToxicos: Schema.Attribute.String;
+    Conductividad: Schema.Attribute.String;
+    FlujoHoraMetroHora: Schema.Attribute.String;
+    FlujoPorDiaSemana: Schema.Attribute.String;
+    FlujoPorHoraDia: Schema.Attribute.String;
+    FlujoPorMetroDia: Schema.Attribute.String;
+    GrasaAceite: Schema.Attribute.String;
+    Magnesio: Schema.Attribute.String;
+    NH4N: Schema.Attribute.String;
+    NitrogenoTotal: Schema.Attribute.String;
+    NKjeldahl: Schema.Attribute.String;
+    NO3N: Schema.Attribute.String;
+    pH: Schema.Attribute.String;
+    PO4P: Schema.Attribute.String;
+    Potasio: Schema.Attribute.String;
+    PTotal: Schema.Attribute.String;
+    Redox: Schema.Attribute.String;
+    S2: Schema.Attribute.String;
+    SO4: Schema.Attribute.String;
+    Sodio: Schema.Attribute.String;
+    Temperatura: Schema.Attribute.String;
+    TSSPorKgDia: Schema.Attribute.String;
+    TSSPorMgLt: Schema.Attribute.String;
+    VFA: Schema.Attribute.String;
   };
 }
 
@@ -320,10 +411,12 @@ export interface GeneralLinkSlugName extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'forms.detalles-biologicos-v-max': FormsDetallesBiologicosVMax;
       'forms.form-alimentacion-al-sistema': FormsFormAlimentacionAlSistema;
       'forms.form-analisis-quimico': FormsFormAnalisisQuimico;
       'forms.form-customer-info': FormsFormCustomerInfo;
       'forms.form-detalles-biologicos': FormsFormDetallesBiologicos;
+      'forms.form-detalles-biologicos-v-min': FormsFormDetallesBiologicosVMin;
       'forms.form-detalles-biologicos-vp': FormsFormDetallesBiologicosVp;
       'forms.form-efluentes-requisito': FormsFormEfluentesRequisito;
       'forms.form-espacio-maximo-disponible': FormsFormEspacioMaximoDisponible;

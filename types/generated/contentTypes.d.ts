@@ -412,6 +412,7 @@ export interface ApiFormAnaerobicSystemRequestFormAnaerobicSystemRequest
   extends Struct.CollectionTypeSchema {
   collectionName: 'form_anaerobic_system_requests';
   info: {
+    description: '';
     displayName: 'FormAnaerobicSystemRequest';
     pluralName: 'form-anaerobic-system-requests';
     singularName: 'form-anaerobic-system-request';
@@ -424,6 +425,18 @@ export interface ApiFormAnaerobicSystemRequestFormAnaerobicSystemRequest
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    DetallesBiologicosVMax: Schema.Attribute.Component<
+      'forms.detalles-biologicos-v-max',
+      false
+    >;
+    DetallesBiologicosVMin: Schema.Attribute.Component<
+      'forms.form-detalles-biologicos-v-min',
+      false
+    >;
+    DetallesBiologicosVP: Schema.Attribute.Component<
+      'forms.form-detalles-biologicos-vp',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

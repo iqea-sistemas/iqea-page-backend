@@ -1,0 +1,115 @@
+{
+  "collectionName": "components_forms_form_detalles_biologicos_v_mins",
+  "info": {
+    "displayName": "FormDetallesBiologicosVMin",
+    "icon": "cloud"
+  },
+  "options": {},
+  "attributes": {
+    "FlujoPorDiaSemana": {
+      "type": "string"
+    },
+    "FlujoPorHoraDia": {
+      "type": "string"
+    },
+    "FlujoPorMetroDia": {
+      "type": "string"
+    },
+    "FlujoHoraMetroHora": {
+      "type": "string"
+    },
+    "CODTotalMgLt": {
+      "type": "string"
+    },
+    "CODSolubleMgLt": {
+      "type": "string"
+    },
+    "BODTotalMgLt": {
+      "type": "string"
+    },
+    "BODSolubleMgLt": {
+      "type": "string"
+    },
+    "CODTotalPorKgDia": {
+      "type": "string"
+    },
+    "CODSolublePorKgDia": {
+      "type": "string"
+    },
+    "BODTotalPorKgDia": {
+      "type": "string"
+    },
+    "BODSolublePorKgDia": {
+      "type": "string"
+    },
+    "TSSPorMgLt": {
+      "type": "string"
+    },
+    "TSSPorKgDia": {
+      "type": "string"
+    },
+    "Temperatura": {
+      "type": "string"
+    },
+    "pH": {
+      "type": "string"
+    },
+    "Conductividad": {
+      "type": "string"
+    },
+    "Redox": {
+      "type": "string"
+    },
+    "VFA": {
+      "type": "string"
+    },
+    "Alcalinidad": {
+      "type": "string"
+    },
+    "NitrogenoTotal": {
+      "type": "string"
+    },
+    "NKjeldahl": {
+      "type": "string"
+    },
+    "NH4N": {
+      "type": "string"
+    },
+    "NO3N": {
+      "type": "string"
+    },
+    "PTotal": {
+      "type": "string"
+    },
+    "PO4P": {
+      "type": "string"
+    },
+    "SO4": {
+      "type": "string"
+    },
+    "S2": {
+      "type": "string"
+    },
+    "Calcio": {
+      "type": "string"
+    },
+    "Magnesio": {
+      "type": "string"
+    },
+    "Potasio": {
+      "type": "string"
+    },
+    "Sodio": {
+      "type": "string"
+    },
+    "Cloruro": {
+      "type": "string"
+    },
+    "GrasaAceite": {
+      "type": "string"
+    },
+    "CompuestosToxicos": {
+      "type": "string"
+    }
+  }
+}

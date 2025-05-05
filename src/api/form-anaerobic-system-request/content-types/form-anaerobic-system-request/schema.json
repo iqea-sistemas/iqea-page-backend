@@ -4,7 +4,8 @@
   "info": {
     "singularName": "form-anaerobic-system-request",
     "pluralName": "form-anaerobic-system-requests",
-    "displayName": "FormAnaerobicSystemRequest"
+    "displayName": "FormAnaerobicSystemRequest",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,21 @@
       "type": "component",
       "repeatable": false,
       "component": "forms.form-customer-info"
+    },
+    "DetallesBiologicosVP": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-detalles-biologicos-vp"
+    },
+    "DetallesBiologicosVMin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-detalles-biologicos-v-min"
+    },
+    "DetallesBiologicosVMax": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.detalles-biologicos-v-max"
     }
   }
 }
