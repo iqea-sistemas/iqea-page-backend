@@ -113,12 +113,12 @@ export interface FormsFormCustomerInfo extends Struct.ComponentSchema {
     Country: Schema.Attribute.String;
     Email: Schema.Attribute.Email;
     LinkedInProfile: Schema.Attribute.String;
-    PhoneNumber: Schema.Attribute.Integer;
+    PhoneNumber: Schema.Attribute.String;
     ProjectDescription: Schema.Attribute.Text;
     StateProvinceRegion: Schema.Attribute.String;
     UserLastName: Schema.Attribute.String;
     UserName: Schema.Attribute.String;
-    ZipCode: Schema.Attribute.Integer;
+    ZipCode: Schema.Attribute.String;
   };
 }
 
