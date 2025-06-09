@@ -25,14 +25,8 @@
     "StateProvinceRegion": {
       "type": "string"
     },
-    "ZipCode": {
-      "type": "integer"
-    },
     "Country": {
       "type": "string"
-    },
-    "PhoneNumber": {
-      "type": "integer"
     },
     "Email": {
       "type": "email"
@@ -45,6 +39,12 @@
     },
     "ProjectDescription": {
       "type": "text"
+    },
+    "ZipCode": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
     }
   }
 }
