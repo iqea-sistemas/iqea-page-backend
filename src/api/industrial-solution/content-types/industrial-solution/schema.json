@@ -25,12 +25,17 @@
       "type": "text"
     },
     "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

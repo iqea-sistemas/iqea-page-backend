@@ -734,6 +734,7 @@ export interface ApiIndustrialSolutionIndustrialSolution
       Schema.Attribute.Private;
     descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
+    is_public: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -841,6 +842,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     descripcion: Schema.Attribute.Text;
     Images: Schema.Attribute.Media<'images' | 'files', true>;
+    is_public: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
